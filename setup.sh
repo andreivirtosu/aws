@@ -30,7 +30,7 @@ sudo apt-get install -y vim
 #Install oh-my-zsh
 sudo apt-get install -y zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-sudo chsh -s /bin/zsh
+#sudo chsh -s /bin/zsh
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
