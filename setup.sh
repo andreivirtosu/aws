@@ -23,10 +23,7 @@ sudo apt-get install -y rlwrap
 
 # Install emacs24
 # https://launchpad.net/~cassou/+archive/emacs
-# sudo add-apt-repository -y ppa:cassou/emacs
-# sudo apt-get -qq update
-# sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
-
+# sudo add-apt-repository -y ppa:cassou/emacs # sudo apt-get -qq update # sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg 
 # Install vim
 sudo apt-get install -y vim
 
@@ -39,18 +36,15 @@ sudo chsh -s /bin/zsh
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 # git pull and install dotfiles as well
-#cd $HOME
-#if [ -d ./dotfiles/ ]; then
-#    mv dotfiles dotfiles.old
-#fi
-#if [ -d .emacs.d/ ]; then
-#    mv .emacs.d .emacs.d~
-#fi
-#
 #git clone https://github.com/startup-class/dotfiles.git
 #ln -sb dotfiles/.screenrc .
 #ln -sb dotfiles/.bash_profile .
 #ln -sb dotfiles/.bashrc .
 #ln -sb dotfiles/.bashrc_custom .
 #ln -sf dotfiles/.emacs.d .
+
+git clone https://github.com/rupa/z.git
+sudo cp z/z.sh /usr/local/bin/z.sh
+chmod +x /usr/local/bin/z.sh
+sudo rm -rf z
 
